@@ -1,4 +1,7 @@
-package com.safaorhan.events
+package com.safaorhan.events.test
+
+import com.safaorhan.events.Event
+import com.safaorhan.events.Events
 
 class TestEvents : Events {
     val events = mutableListOf<Event>()
