@@ -11,7 +11,7 @@ import kotlinx.coroutines.launch
 fun AppCompatActivity.collectEventsFrom(events: Events, view: View) {
     lifecycleScope.launch {
         lifecycle.repeatOnLifecycle(STARTED) {
-            events.collectEvents(view)
+            (events as EventsImpl).collectEvents(view)
         }
     }
 }

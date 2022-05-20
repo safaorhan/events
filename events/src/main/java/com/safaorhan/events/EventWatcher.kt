@@ -6,7 +6,7 @@ package com.safaorhan.events
  * Any event that is sent passes through all EventWatchers added to the `Events` instance, before
  * being delegated and handled.
  *
- * @see Events#addEventWatcher
+ * @see EventsImpl#addEventWatcher
  */
 interface EventWatcher {
     fun watch(event: Event)

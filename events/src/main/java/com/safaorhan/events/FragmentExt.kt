@@ -9,7 +9,7 @@ import kotlinx.coroutines.launch
 fun Fragment.collectEventsFrom(events: Events) {
     viewLifecycleOwner.lifecycleScope.launch {
         lifecycle.repeatOnLifecycle(STARTED) {
-            events.collectEvents(view!!)
+            (events as EventsImpl).collectEvents(view!!)
         }
     }
 }
